@@ -12,44 +12,127 @@
     </head>
     <body>
         <h1>Declarative</h1>
-        <p>
+        <p class="intro">
             <a href="https://www.linkedin.com/in/amaschio/">Two</a>
             <a href="https://www.linkedin.com/in/mbavio/">friends</a> with 20 years
             in the tech industry get together to take good care of your technological
             problems.
         </p>
-        <h2>Our Highlights</h2>
-        <ul>
-            <li>
-                We built an esbuild based custom bundler in order to ship the
-                least amount of JS and CSS for websites.
-            </li>
-            <li>
-                We worked alogside designers and implemented custom design
-                systems from scratch in multiple projects.
-            </li>
-            <li>
-                We architected a headless Shopify based e-commerce website and
-                led a 12 people team to deliver the project with a very tight
-                schedule.
-            </li>
-        </ul>
-        <h2>Things that happened while we were around</h2>
-        <ul>
-            <li>Napster hooks the world on digital music</li>
-            <li>Social networks take off</li>
-            <li>The iPhone got invented</li>
-            <li>The Existence Of The Higgs Boson Confirmed</li>
-            <li>Silicon Valley became a successful TV show</li>
-            <li>Electric cars were invented</li>
-            <li>Edward Snowden reveals NSA surveillance</li>
-            <li>#MeToo movement</li>
-            <li>Facebook became a movie</li>
-            <li>Streaming becomes mainstream</li>
-            <li>Bitcoin was invented</li>
-            <li>ChatGPT was predicted by a movie</li>
-            <li>Y Combinator changes how startups start up</li>
-            <li>Amazon Web Services powers the web</li>
-        </ul>
+        <section class="highlights">
+            <h2>Our Most Important Work</h2>
+            <ul class="hi">
+                <li>
+                    <span>Headless E-Commerce Under Pressure:</span> We architected
+                    a headless Shopify platform and led a 12-person team to deliver
+                    a complete e-commerce solution on an aggressive timeline.
+                </li>
+                <li>
+                    <span>Breaking Amazon's Global Alerts:</span> We discovered a
+                    critical flaw in Amazon's worldwide notification system during
+                    a load test, triggering a severity 2 alarm across their entire
+                    infrastructure.
+                </li>
+                <li>
+                    <span>Custom Design Systems at Scale:</span> We partnered with
+                    designers to architect and implement design systems from the
+                    ground up across multiple projects.
+                </li>
+                <li>
+                    <span>Zero-Downtime Migration at Scale:</span> We migrated a
+                    massive application handling 10M+ requests per minute to a new
+                    cloud platform without a single second of downtime, with full
+                    automated deployment.
+                </li>
+                <li>
+                    <span>Lightning-Fast Custom Bundler:</span> We built an esbuild-based
+                    bundler from scratch for a custom website builder that ships
+                    the absolute minimum JS and CSS, delivering blazing performance
+                    without any of the bloat.
+                </li>
+                <li>
+                    <span>Space Hardware Engineering:</span> We designed fault-tolerant
+                    hardware that operates in satellites—built to survive and perform
+                    in the harshness of space.
+                </li>
+            </ul>
+        </section>
+        <section class="events">
+            <h2>Things that Happened While We Were Around</h2>
+            <ul>
+                <li>Napster teaches everyone to steal music (digitally)</li>
+                <li>Social networks make us all connected and miserable</li>
+                <li>Apple puts the internet in your pocket</li>
+                <li>CERN finds the God particle (it was real!)</li>
+                <li>Silicon Valley the show becomes a documentary</li>
+                <li>Tesla makes electric cars actually cool</li>
+                <li>Snowden burns the NSA's secrets to the ground</li>
+                <li>#MeToo breaks decades of silence</li>
+                <li>The Social Network immortalizes Zuckerberg</li>
+                <li>Netflix kills Blockbuster (and cable TV)</li>
+                <li>Someone invents money out of math</li>
+                <li>“Her” predicts ChatGPT five years early</li>
+                <li>Y Combinator becomes the startup factory</li>
+                <li>AWS becomes the invisible backbone of everything</li>
+            </ul>
+        </section>
     </body>
 </html>
+
+<style is:global>
+    body {
+        font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.33;
+        margin-block: 2rem;
+        margin-inline: min(4rem, 5vw);
+        max-width: 33rem;
+        color: #2c332c;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1 {
+        color: #639e64;
+        font-size: 3rem;
+        text-transform: lowercase;
+        margin: 0;
+    }
+
+    .intro {
+        font-size: 1.33rem;
+        text-wrap: balance;
+    }
+
+    h2 {
+        font-size: 1.33rem;
+    }
+
+    a {
+        color: #639e64;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .highlights li::marker,
+   .events li::marker {
+        color: #639e64;
+    }
+
+    .highlights li span {
+        color: #639e64;
+        font-weight: bold;
+    }
+
+    .highlights li + li {
+        margin-top: 1rem;
+    }
+
+    .highlights,
+    .events {
+        margin-top: 6rem;
+    }
+
+    .
+</style>
