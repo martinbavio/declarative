@@ -18,6 +18,9 @@
             in the tech industry get together to take good care of your technological
             problems.
         </p>
+        <a href="mailto:hello@declarative.studio" class="take-action"
+            >Work with us</a
+        >
         <section class="highlights">
             <h2>Our Most Important Work</h2>
             <ul class="hi">
@@ -79,20 +82,24 @@
 </html>
 
 <style is:global>
+    :root {
+        --color-brand: #639e64;
+        --color-black: #2c332c;
+    }
     body {
         font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
         line-height: 1.33;
         margin-block: 2rem;
         margin-inline: min(4rem, 5vw);
         max-width: 33rem;
-        color: #2c332c;
+        color: var(--color-black);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
     }
 
     h1 {
-        color: #639e64;
+        color: var(--color-brand);
         font-size: 3rem;
         text-transform: lowercase;
         margin: 0;
@@ -108,7 +115,7 @@
     }
 
     a {
-        color: #639e64;
+        color: var(--color-brand);
     }
 
     ul {
@@ -116,12 +123,12 @@
     }
 
     .highlights li::marker,
-   .events li::marker {
-        color: #639e64;
+    .events li::marker {
+        color: var(--color-brand);
     }
 
     .highlights li span {
-        color: #639e64;
+        color: var(--color-brand);
         font-weight: bold;
     }
 
@@ -134,5 +141,19 @@
         margin-top: 6rem;
     }
 
-    .
+    .take-action {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--color-brand);
+        color: #fff;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-weight: bold;
+        padding: 0.66rem 1rem;
+    }
+
+    .take-action:hover {
+        background-color: var(--color-black);
+    }
 </style>
